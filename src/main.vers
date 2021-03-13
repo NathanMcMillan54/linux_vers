@@ -1,0 +1,5 @@
+fun exit() {
+    il_asm('mov $1, %eax');
+    il_asm('movl $0, %ebx');
+    il_asm('int $0x80');
+}
